@@ -1,0 +1,206 @@
+html, body {
+	margin: 0;
+}
+
+body {
+	background: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#headertop {
+	color: white;
+	font-size: 0.45rem;
+	font-weight: bold;
+	padding: 0.8rem 4rem;
+	height: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+
+#headertop span {
+	margin-right: 3rem;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+#headerbottom {
+	background: #111;
+	/* height: 2rem; */
+	display: flex;
+	align-items: center;
+}
+
+#bottominner {
+	display: flex;
+	align-items: center;
+    padding: 1rem 4rem;
+}
+
+#headerbottom #logo {
+	width: 120px;
+	margin-right: 2rem;
+}
+
+
+#navigation a,
+#navigation a:visited
+{
+	font-size: 0.9rem;
+	color: white;
+	text-decoration: none;
+    margin-right: 1.5rem;
+	font-weight: 500;
+}
+
+#navigation a:hover
+{
+	color: red;
+}
+
+#homebanner {
+	height: 28rem;
+	color: white;
+	background-image: url("../images/banner-home2.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: cover;
+}
+
+#homebannerinner {
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+}
+
+#homebannerinner div {
+	width: 30%;
+	font-size: 1.6em;
+	position: relative;
+	left: 5rem;
+}
+
+#homebannerinner h1 {
+	font-size: 1.5em;
+}
+
+#homebannerinner h2 {
+	width: 80%;
+	color: #fdbe3f;
+	font-size:1em;
+}
+
+
+#homebannerinner button {
+	background: #1988ff;
+	color: white;
+	padding: 0.5rem 1.8rem;
+	border: none;
+	border-radius: 2rem;
+	font-size: 0.8em;
+}
+
+#homepackages {
+	color: white;
+	text-align: center;
+}
+
+#homepackages h4 {
+	font-size: 1.6rem;
+    font-weight: normal;
+    margin: 4rem 0;
+}
+
+#packagescontainer {
+	display: flex;
+	justify-content: center;
+	width: 95%;
+    margin: 0 auto;
+}
+
+.packagecard {
+	background: #2B303C;
+	border-radius: 2rem;
+	margin: 0 0.5rem;
+	min-height: 10rem;
+	font-size: 0.8em;
+	padding: 3rem 0.8rem;
+}
+
+.packagecard img {
+	height: 1.6rem;
+	padding: 0.8rem 0;
+}
+
+.packagecard span:first-child {
+	display: block;
+	font-size: 1.5rem;
+}
+
+.packagecard span:nth-child(2) {
+	font-size: 2.4rem;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 1.5rem;
+}
+
+.packagecard button {
+	background: #1988ff;
+	color: white;
+	padding: 0.6rem 1.8rem;
+	border: none;
+	border-radius: 2rem;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+}
+
+.packagecard .square {
+	margin-top: 0.8rem;
+	border: 2px solid red;
+	border-radius: 1rem;
+	padding: 0.8rem;
+}
+
+.border-purple {
+	border-color: purple !important;
+}
+
+.border-pink {
+	border-color: magenta !important;
+}
+
+.border-blue {
+	border-color: blue !important;
+}
+
+.border-yellow {
+	border-color: yellow !important;
+}
+
+.secondseparator {
+	margin-bottom: 1rem;
+}
+
+.packagedescription {
+	font-size: 0.9rem;
+}
+
+.highlight {
+	color: #38c3df !important;
+}
+
+.card-animation {
+	position: relative;
+	animation: pulse-animation 2s infinite;
+	animation-direction: alternate;
+	border: 2px solid yellow;
+}
+
+@keyframes pulse-animation {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
