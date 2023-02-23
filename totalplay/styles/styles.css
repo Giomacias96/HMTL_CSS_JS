@@ -1,0 +1,194 @@
+html, body {
+	margin: 0;
+}
+
+body {
+	background: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#headertop {
+	color: white;
+	font-size: 0.45rem;
+	font-weight: bold;
+	padding: 0 2.5rem;
+	height: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+
+#headertop span {
+	margin-right: 3rem;
+}
+
+#headerbottom {
+	background: #111;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+#bottominner {
+	padding: 0 2.5rem;
+	display: flex;
+}
+
+#headerbottom #logo {
+	width: 70px;
+	margin-right: 2rem;
+}
+
+#navigation a, 
+#navigation a:visited
+{
+	font-size: 0.6rem;
+	color: white;
+	text-decoration: none;
+	margin-right: 0.5rem;
+}
+
+#navigation a:hover
+{
+	color: red;
+}
+
+#homebanner {
+	height: 23rem;
+	color: white;
+	background-image: url("../images/banner-home2.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: cover;
+}
+
+#homebannerinner {
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+}
+
+#homebannerinner div {
+	width: 30%;
+	font-size: 1.6em;
+	position: relative;
+	left: 5rem;
+}
+
+#homebannerinner h1 {
+	font-size:0.8em;
+}
+
+#homebannerinner h2 {
+	width: 80%;
+	color: #fdbe3f;
+	font-size:0.5em;
+}
+
+
+#homebannerinner button {
+	background: #1988ff;
+	color: white;
+	padding: 0.5rem 1.3rem;
+	border: none;
+	border-radius: 2rem;
+	font-size: 0.6em;
+}
+
+#homepackages {
+	color: white;
+	text-align: center;
+}
+
+#homepackages h4 {
+	font-size: 0.9rem;
+}
+
+#packagescontainer {
+	display: flex;
+	justify-content: center;
+}
+
+.packagecard {
+	background: #2B303C;
+	border-radius: 2rem;
+	margin: 0 0.5rem;
+	min-height: 10rem;
+	font-size: 0.8em;
+	padding: 0.5rem;
+}
+
+.packagecard img { 
+	height: 1rem;
+}
+
+.packagecard span:first-child {
+	margin-top: 1rem;
+	display: block;
+}
+
+.packagecard span:nth-child(2) {
+	font-size: 1.6rem;
+	font-weight: bold;
+	display: block;
+}
+
+.packagecard button {
+	background: #1988ff;
+	color: white;
+	padding: 0.3rem 1.2rem;
+	border: none;
+	border-radius: 2rem;
+	font-size: 0.6em;
+	font-size: 0.6rem;
+	margin-top: 1rem;
+}
+
+.packagecard .square {
+	border: 2px solid red;
+	border-radius: 1rem;
+}
+
+.border-purple {
+	border-color: purple !important;
+}
+
+.border-pink {
+	border-color: magenta !important;
+}
+
+.border-blue {
+	border-color: blue !important;
+}
+
+.border-yellow {
+	border-color: yellow !important;
+}
+
+.secondseparator {
+	margin-bottom: 1rem;
+}
+
+.packagedescription {
+	font-size: 0.6rem;
+}
+
+.highlight {
+	color: #38c3df !important;
+}
+
+.card-animation {
+	position: relative;
+	animation: pulse-animation 2s infinite;
+	animation-direction: alternate;
+	border: 2px solid yellow;
+}
+
+@keyframes pulse-animation {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
