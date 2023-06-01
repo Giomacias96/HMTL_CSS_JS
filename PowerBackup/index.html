@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tu página web</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li class="active"><a href="index.html">Inicio</a></li>
+    </ul>
+
+    <section id="inicio">
+        <div class="centrada">
+            <img src="img/power-bank-charging-smartphone-icon-vector-17873140.jpg" alt="Imagen centrada">
+        </div>
+    </section>
+
+    <section id="Info">
+        <div class="container">
+            <h1 style="font-weight: 400;">Conócenos</h1>
+            <p style="font-weight: 400;">
+                Es una empresa constructora 100% mexicana dedicada a prestar servicios en el área de la Construcción
+                Eléctrica, mismos que cubren desde el diseño de proyectos hasta la correcta ejecución e instalación del
+                sistema eléctrico en general, bajo las Normas Oficiales Mexicanas.</p>
+            <a href="html/Nosotros.html">Conoce un poco más ...</a>
+            <hr>
+        </div>
+    <!--Seccion: Galeria Fin-->
+
+    <!--Seccion: Extra-->
+    <section id="Extra">
+        <div class="container">
+            <h1 style="font-weight: 400;">Nuestro trabajo</h1>
+            <p style="font-weight: 400;">
+                SIECSA cuenta con un equipo de Ingenieros y Arquitectos preparados para el diseño, construcción y
+                administración de obras, así como la infraestructura necesaria para hacer frente a las necesidades
+                actuales. Nuestra compañía está legalmente constituida y cumple con todos los requerimientos necesarios
+                para ofrecer servicios de construcción de obras eléctricas y construcción en general.
+            </p>
+            <a href="html/Servicios.html">Servicios ...</a>
+        </div>
+    </section>
+    <!--Seccion: Extra Fin-->
+    <div class="container">
+        <div class="col-md-12 col-sm-12">
+            <hr>
+        </div>
+    </div>
+    <!--Seccion: Contacto-->
+    <section id="Contacto">
+        <div class="container" align="center">
+            <div class="container">
+                <h1 style="font-weight: 400;">Contáctanos</h1>
+                <p style="font-weight: 400;">
+                    Somos tu mejor opción.
+                </p>
+                <a href="html/Contacto.html">Comunícate con nosotros.</a>
+            </div>
+        </div>
+    </section>
+    <!--Seccion: Fin-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <p align="center" style="font-family: 'Titillium Web', sans-serif;">Correo:
+                        clientes@siecsajuarez.com</p>
+                    <hr>
+                </div>
+                <div class="col-md-4 col-md-offset-1 col-sm-6" align="center"
+                    style="margin-right: auto;margin-left: auto;">
+                    <a href="https://www.facebook.com/siecsa.juarez/" target="_blank" class="fb"
+                        style="text-decoration: none;color: black;"><img src="IMG/fb.png"></a>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <hr>
+                    <div class="footer-copyright">
+                        <p align="center" style="font-family: 'Titillium Web', sans-serif;">© 2019 SIECSA - Servicos de
+                            Ingeniería Eléctrica y Construcción S.A. de C.V.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Aquí puedes agregar el contenido de los demás archivos HTML -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var currentLocation = window.location.href;
+            $("ul.menu li a").each(function () {
+                if (this.href === currentLocation) {
+                    $(this).parent().addClass("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

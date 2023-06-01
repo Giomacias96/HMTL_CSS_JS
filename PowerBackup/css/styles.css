@@ -1,0 +1,98 @@
+/* Estilos para el menú de navegación */
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+ul.menu li {
+    float: right;
+}
+
+ul.menu li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para resaltar el menú activo */
+ul.menu li.active a {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para la sección de inicio */
+section#inicio {
+    position: relative;
+    z-index: -1;
+    background-image: url("../img/Planet9_3840x2160.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    /* Ajusta la altura según tus necesidades */
+}
+
+section#inicio .centrada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#inicio .centrada img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Estilos para el resto de las secciones */
+.container {
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 400;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    color: #999;
+}
